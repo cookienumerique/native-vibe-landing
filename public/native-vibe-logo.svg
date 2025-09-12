@@ -1,0 +1,9 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="500" cy="500" r="480" fill="#DAD1BF" stroke="#391205" stroke-width="40"/>
+<path d="M500.5 99C721.093 99 900 278.265 900 499.5C900 720.735 721.093 900 500.5 900C279.907 900 101 720.735 101 499.5C101 278.265 279.907 99 500.5 99Z" stroke="#391205" stroke-width="40"/>
+<line x1="499" y1="338" x2="499" y2="662" stroke="#391205" stroke-width="50" stroke-linecap="round"/>
+<line x1="629" y1="425" x2="629" y2="575.01" stroke="#391205" stroke-width="50" stroke-linecap="round"/>
+<line x1="369" y1="425" x2="369" y2="575.01" stroke="#391205" stroke-width="50" stroke-linecap="round"/>
+<line x1="239" y1="481" x2="239" y2="519" stroke="#391205" stroke-width="50" stroke-linecap="round"/>
+<line x1="759" y1="501" x2="759" y2="499" stroke="#391205" stroke-width="50" stroke-linecap="round"/>
+</svg>
