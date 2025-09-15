@@ -8,32 +8,31 @@ export const SolutionSection = () => {
       <TitleSection>La solution : NativeVibe 🚀</TitleSection>
 
       <p className="text-lg text-brown text-center mb-8">
-        Marre des cours trop sérieux ? Avec NativeVibe, tu reçois chaque jour{" "}
-        <b>2 expressions US</b> 🎧 — rapides, fun, et prêtes à être utilisées en
-        vrai.
+        J&apos;avais accès à Babbel à vie. J&apos;ai même atteint un niveau C1…
+        Mais devant mes séries ou en parlant avec des Anglais, c&apos;était trop
+        dur. J&apos;ai fini par décrocher.
+        <br />
+        Alors j&apos;ai testé des cours perso avec ChatGPT. Et là, révélation ✨
+        : apprendre <b>2 expressions US par jour</b> dans un contexte fun, ça
+        change tout.
       </p>
 
       <ul className="space-y-4 text-brown text-left max-w-xl mx-auto">
         <li>
-          🎬 <b>Netflix sans sous-titres</b> → tu captes enfin les répliques qui
-          te faisaient buguer.
+          🎬 <b>Netflix devient clair</b> → tu comprends enfin les répliques
+          sans sous-titres.
         </li>
         <li>
-          💬 <b>Un anglais qui coule</b> → 2–3 phrases qui claquent, pas du
-          blabla scolaire.
+          🎶 <b>Les chansons US prennent vie</b> → tu saisis les vraies vibes
+          derrière les paroles.
         </li>
         <li>
-          😎 <b>Le petit “wow” en soirée</b> → tu impressionnes ton entourage
-          avec des vibes 100% US.
+          😎 <b>Confiance & style</b> → en groupe, tu sors des phrases qui
+          sonnent vraiment américaines.
         </li>
       </ul>
 
-      <div className="mt-10 text-center">
-        <Button>🚀 Rejoins la liste d&apos;attente</Button>
-        <p className="mt-3 text-sm text-gray-600">
-          Gratuit & sans spam — juste ton accès dès le lancement.
-        </p>
-      </div>
+      <Button className="">🚀 Je rejoins la liste d&apos;attente</Button>
     </Section>
   );
 };
