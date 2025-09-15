@@ -16,16 +16,17 @@ export const HeroSection = () => {
         </h1>
       </div>
       <p className="text-lg font-bold text-[var(--brown)] text-center">
-        Stop l&apos;anglais scolaire. <br />
-        Parle comme un vrai Américain.
+        Stop l&apos;anglais scolaire. 🚫
+        <br />
+        Parle comme un vrai Américain. 🇺🇸
       </p>
       <p className="text-sm text-center text-[var(--soft_teal)]">
-        Apprends 2 expressions US du quotidien en 10 minutes par jour.
+        Une app fun pour apprendre 2 expressions US par jour en 10 minutes.
       </p>
       <div className="flex flex-col gap-2 text-center">
-        <Button>Recevoir mes 2 expressions</Button>
+        <Button>Essaie NativeVibe en avant-première</Button>
         <p className="text-xs italic font-semibold">
-          Aucun spam tu peux de désinscrire quand tu veux
+          Zéro spam - Zéro revente
         </p>
       </div>
       <Image

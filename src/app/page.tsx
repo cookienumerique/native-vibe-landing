@@ -4,6 +4,7 @@ import { Footer } from "@/app/_partials/footer";
 import { HeroSection } from "@/app/_partials/hero-section";
 import { HowItWorkSection } from "@/app/_partials/how-it-work-section";
 import { ProblemSection } from "@/app/_partials/problem-section";
+import { SolutionSection } from "@/app/_partials/solution-section";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       <HeroSection />
 
       <ProblemSection />
+
+      <SolutionSection />
 
       <HowItWorkSection />
 
