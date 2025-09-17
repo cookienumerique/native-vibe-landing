@@ -1,27 +1,34 @@
+import { EmailDialog } from "@/app/email-dialog";
 import { Section } from "@/app/section";
+import { Text } from "@/app/text";
 import { TitleSection } from "@/app/title-section";
-import { Button } from "@/components/ui/button";
+import { Rocket } from "lucide-react";
 
 export const FinalCtaAction = () => {
   return (
-    <Section className="bg-[var(--sand)] py-16 text-center">
-      <TitleSection>Prêt à passer au niveau supérieur ? 🚀</TitleSection>
+    <Section className="bg-white">
+      <div>
+        <TitleSection>Et si tu rejoignais les premiers testeurs ?</TitleSection>
 
-      <p className="text-lg text-brown max-w-2xl mx-auto mb-6">
-        En 10 minutes par jour, découvre{" "}
-        <b>2 expressions américaines authentiques</b>. Comprends enfin tes
-        séries & tes musiques, et impressionne ton entourage avec un anglais qui
-        sonne vrai.
-      </p>
+        <Text>
+          Chaque jour, 2 expressions US utiles et authentiques. En 10 minutes,
+          tu progresses vraiment, sans cours barbants.
+        </Text>
 
-      <form className="flex flex-col md:flex-row gap-4 justify-center max-w-lg mx-auto">
-        <input
-          type="email"
-          placeholder="Ton email"
-          className="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink"
-        />
-        <Button>🚀 Rejoins la liste d&apos;attente</Button>
-      </form>
+        <Text>
+          Et plus la communauté grandit vite, plus vite l&apos;app arrive.
+        </Text>
+        <form className="flex flex-col md:flex-row gap-4 justify-center max-w-lg mx-auto">
+          <EmailDialog>Deviens testeur NativeVibe</EmailDialog>
+          <div className="flex flex-row gap-2 items-start ">
+            <Rocket size={20} color="var(--warm_terracotta)" />
+            <Text className="text-sm text-[var(--warm_terracotta)] font-bold">
+              Inscription gratuite. Aucun spam. Tu seras parmi les premiers
+              avertis.
+            </Text>
+          </div>
+        </form>
+      </div>
     </Section>
   );
 };

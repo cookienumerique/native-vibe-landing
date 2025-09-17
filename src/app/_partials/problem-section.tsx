@@ -1,52 +1,42 @@
 import { Section } from "@/app/section";
+import { TitleSection } from "@/app/title-section";
 
 export const ProblemSection = () => {
   return (
     <Section className="bg-[var(--white)]">
+      <TitleSection>👉 Tu te reconnais là-dedans ?</TitleSection>
       <div className="flex flex-col gap-2">
         <ul className="flex flex-col gap-2">
           <li>
-            📺 Tu te débrouilles en anglais… mais dès que tu regardes une série
-            sous-titrée, tu peines à suivre l&apos;histoire.
+            • 📺 Tu te débrouilles en anglais… mais dès que tu regardes une
+            série sous-titrée, tu perds le fil de l&apos;histoire.
           </li>
           <li>
-            🎶 Tu connais la mélodie par cœur, mais les paroles restent floues.
+            • 🎶 Tu fredonnes tes chansons préférées, mais les paroles restent
+            floues.
           </li>
           <li>
-            💬 Tu arrives à dire 2-3 phrases… mais dès qu&apos;on te répond, tu
-            décroches
+            💬 Tu arrives à placer 2-3 phrases… mais quand on te répond, tu
+            décroches.
           </li>
           <li>
-            😅 À la pause café ou devant l&apos;école, tu rêverais de lâcher une
-            phrase en anglais qui ferait son petit effet
+            😅 À la première occasion, tu rêverais de sortir une phrase qui
+            sonne vraiment native.
           </li>
         </ul>
 
         <div className="flex flex-col gap-2">
           <p className="italic">
-            “Même avec mon B2, dès que je croisais des Anglais devant
-            l&apos;école de mon fils, je paniquais. J&apos;avais peur de ne pas assurer, et
-            quand ils parlaient trop vite, je perdais le fil. Résultat : je me
-            sentais à la traîne.”
+            “Même avec mon niveau B2, quand je croisais des Anglais devant
+            l&apos;école de mon fils, je stressais déjà avant d&apos;ouvrir la
+            bouche. Je savais que j&apos;allais réussir à dire deux phrases…
+            mais pas comprendre quand ils me répondaient. Résultat : je me
+            sentais largué.”
           </p>
           <p className="font-normal text-right w-full">
             Mickael, fondateur de NativeVibe
           </p>
         </div>
-        {/* <TitleSection>Tu manques de temps ?</TitleSection>
-        <p>10 minutes max : leçon express</p>
-        <p>zéro surcharge : écoute = répéte = c&apos;est fait !</p>
-        <p>
-          anglais réel de la culture US : tiré de tes séries, lyrics et voyages.
-        </p>
-
-        <TitleSection>
-          Ton anglais ne suffit pas pour comprendre tes séries et chansons
-          préférés ?
-        </TitleSection>
-        <p>2 expressions US/jour → claires & utiles</p>
-        <p>Audio natif → tu captes le vrai accent</p>
-        <p>Séries, chansons, voyages → enfin compréhensibles</p> */}
       </div>
     </Section>
   );

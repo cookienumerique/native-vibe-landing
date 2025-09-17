@@ -1,43 +1,33 @@
+import { EmailDialog } from "@/app/email-dialog";
 import { Section } from "@/app/section";
 import { TitleSection } from "@/app/title-section";
-import { Button } from "@/components/ui/button";
 
 export const CommunautySection = () => {
   return (
-    <Section className="bg-white">
-      <TitleSection>
-        Une communauté qui vit l&apos;anglais comme toi 🤝
-      </TitleSection>
+    <Section className="bg-[var(--sand)]">
+      <TitleSection>👉 Rejoins le mouvement NativeVibe 🤝</TitleSection>
 
       <p>
-        Moi aussi, j&apos;ai commencé avec Babbel. J&apos;ai progressé
-        jusqu&apos;au niveau C1, mais les cours devenaient trop scolaires, trop
-        sérieux… Et surtout, ça ne m&apos;a pas aidé à comprendre mes séries ou
-        à parler plus naturellement.
-        <br />
-        <br />
-        C&apos;est pour ça que j&apos;ai créé <b>NativeVibe</b> : une approche
-        simple et fun, avec
-        <b> 2 expressions US par jour</b>, expliquées pour que tu puisses les
-        comprendre et les utiliser tout de suite.
+        J&apos;ai longtemps appris l&apos;anglais de façon scolaire.
+        Jusqu&apos;à comprendre que ce qu&apos;il manquait, c&apos;était le fun,
+        le concret et la pratique. Avec NativeVibe, tu ne seras pas seul : une
+        nouvelle génération de Français veut arrêter l&apos;anglais scolaire et
+        parler comme dans les séries et les musiques US.
       </p>
 
       <ul className="space-y-4 text-brown text-left max-w-xl mx-auto">
         <li>
-          🎬 Tu reconnais des expressions dans tes séries, et tu souris en les
-          comprenant enfin.
+          🎬 Tu souris en reconnaissant une expression dans ta série préférée.
         </li>
         <li>
-          💬 Tu peux les utiliser dans une vraie discussion et sentir que ça
-          sonne juste.
+          💬 Tu places des phrases naturelles dans une discussion, sans blocage.
         </li>
         <li>
-          🤝 Tu n&apos;es plus seul : tu rejoins une communauté qui apprend et
-          progresse ensemble.
+          🤝 Tu avances avec une communauté motivée, qui partage la même vibe
+          que toi.
         </li>
       </ul>
-
-      <Button>🎉 Rejoins la vibe dès maintenant</Button>
+      <EmailDialog>Rejoins la vibe dès maintenan</EmailDialog>
     </Section>
   );
 };

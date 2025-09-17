@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { EmailDialog } from "@/app/email-dialog";
 import Image from "next/image";
 
 export const HeroSection = () => {
@@ -21,12 +21,14 @@ export const HeroSection = () => {
         Parle comme un vrai Américain. 🇺🇸
       </p>
       <p className="text-sm text-center text-[var(--soft_teal)]">
-        Une app fun pour apprendre 2 expressions US par jour en 10 minutes.
+        Une app fun qui t&apos;apprend chaque jour 2 expressions US utiles et
+        authentiques… et que tu pratiques direct. 10 minutes par jour pour
+        passer au niveau supérieur.
       </p>
       <div className="flex flex-col gap-2 text-center">
-        <Button>Essaie NativeVibe en avant-première</Button>
+        <EmailDialog>Rejoins les testeurs NativeVibe</EmailDialog>
         <p className="text-xs italic font-semibold">
-          Zéro spam - Zéro revente
+          Inscription gratuite — aucun spam.
         </p>
       </div>
       <Image
