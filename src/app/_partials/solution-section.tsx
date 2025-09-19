@@ -1,7 +1,7 @@
-import { EmailDialog } from "@/app/email-dialog";
-import { Section } from "@/app/section";
-import { Text } from "@/app/text";
-import { TitleSection } from "@/app/title-section";
+import { EmailDialog } from "@/app/components/email-dialog";
+import { Section } from "@/app/components/section";
+import { Text } from "@/app/components/text";
+import { TitleSection } from "@/app/components/title-section";
 import { cn } from "@/lib/utils";
 import { Clapperboard, Crown, MessagesSquare, Quote } from "lucide-react";
 
@@ -20,7 +20,10 @@ export const SolutionItem = ({
 }: SolutionItemProps) => {
   return (
     <div
-      className={cn("flex flex-col gap-2 p-8 bg-white rounded-xl", className)}
+      className={cn(
+        "flex flex-col gap-2 p-8 bg-white rounded-xl border-6 border-[var(--sand)]",
+        className
+      )}
     >
       <div className="flex flex-col gap-4">
         {icon}
@@ -59,27 +62,25 @@ export const SolutionSection = () => {
         </div>
         <div className="flex flex-col gap-8">
           <SolutionItem
-            className="bg-[var(--sand)] border-6 border-white"
+            className="bg-[var(--sand)]"
             title="Netflix devient clair"
             description="Comprends enfin tes séries préférées avec ou sans sous-titres."
             icon={<Clapperboard size={50} color="var(--warm_terracotta)" />}
           />
           <SolutionItem
-            className="bg-white border-6 border-[var(--sand)]"
+            className="bg-white"
             title="Un anglais plus fluide"
             description="Finis les phrases trop scolaires."
             icon={<MessagesSquare size={50} color="var(--warm_terracotta)" />}
           />
           <SolutionItem
-            className="bg-[var(--sand)] border-6 border-white"
+            className="bg-[var(--sand)]"
             title="Confiance & style"
             description="Impressionne ton entourage avec des phrases qui
           sonnent vraiment américaines."
             icon={<Crown size={50} color="var(--warm_terracotta)" />}
           />
-          <EmailDialog>
-            Je veux mon guide gratuit et l&apos;accès prioritaire
-          </EmailDialog>
+          <EmailDialog />
         </div>
       </div>
     </Section>

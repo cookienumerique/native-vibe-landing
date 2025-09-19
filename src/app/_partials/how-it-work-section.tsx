@@ -1,7 +1,7 @@
-import { EmailDialog } from "@/app/email-dialog";
-import { Section } from "@/app/section";
-import { Text } from "@/app/text";
-import { TitleSection } from "@/app/title-section";
+import { EmailDialog } from "@/app/components/email-dialog";
+import { Section } from "@/app/components/section";
+import { Text } from "@/app/components/text";
+import { TitleSection } from "@/app/components/title-section";
 import { Book, Mail, Users } from "lucide-react";
 type HowItWorkItemProps = {
   title: string;
@@ -21,31 +21,29 @@ const HowItWorkItem = ({ title, description, icon }: HowItWorkItemProps) => {
 };
 export const HowItWorkSection = () => {
   return (
-    <Section className="bg-[var(--white)]">
-      <div className="flex flex-col gap-4">
+    <Section className="bg-[var(--sand)]">
+      <div className="flex flex-col gap-8">
         <TitleSection>Comment ça marche ?</TitleSection>
         <HowItWorkItem
           title="Tu t'inscris en 10 secondes"
           description="Juste ton email, rien de plus."
-          icon={<Mail size={35} color="var(--soft_petrol_blue)" />}
+          icon={<Mail size={35} color="var(--warm_terracotta)" />}
         />
 
         <HowItWorkItem
           title="Tu recois ton guide gratuit"
           description="10 expressions utiles à utiliser dès aujourd'hui"
-          icon={<Book size={35} color="var(--soft_petrol_blue)" />}
+          icon={<Book size={35} color="var(--warm_terracotta)" />}
         />
 
         <HowItWorkItem
           title="Tu rejoins une communauté motivée"
           description="Avance avec une communauté motivée, qui partage la même vibe que toi."
-          icon={<Users size={35} color="var(--soft_petrol_blue)" />}
+          icon={<Users size={35} color="var(--warm_terracotta)" />}
         />
 
-        <div className="flex flex-col gap-8">
-          <EmailDialog>
-            Je veux mon guide gratuit et l&apos;accès prioritaire
-          </EmailDialog>
+        <div className="flex flex-col gap-2">
+          <EmailDialog />
           <Text className="text-xs italic text-[var(--gray)]">
             Et plus on est nombreux à rejoindre, plus vite l&apos;app arrive 🚀.
           </Text>

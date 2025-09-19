@@ -1,6 +1,6 @@
-import { Section } from "@/app/section";
-import { Text } from "@/app/text";
-import { TitleSection } from "@/app/title-section";
+import { Section } from "@/app/components/section";
+import { Text } from "@/app/components/text";
+import { TitleSection } from "@/app/components/title-section";
 import { cn } from "@/lib/utils";
 import {
   MessageCircleMore,
@@ -86,7 +86,9 @@ export const ProblemSection = () => {
             width={150}
             height={150}
           />
-          <Text className="text-right">Mickael, fondateur de NativeVibe</Text>
+          <Text className="text-sm text-right">
+            Mickael, fondateur de NativeVibe
+          </Text>
         </div>
       </div>
     </Section>

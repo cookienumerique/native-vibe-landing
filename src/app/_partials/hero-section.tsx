@@ -1,21 +1,12 @@
-import { EmailDialog } from "@/app/email-dialog";
-import { Text } from "@/app/text";
+import { EmailDialog } from "@/app/components/email-dialog";
+import { Header } from "@/app/components/header";
+import { Text } from "@/app/components/text";
 import Image from "next/image";
 
 export const HeroSection = () => {
   return (
     <div>
-      <div className="flex flex-row items-center gap-2 bg-[var(--sand)] p-4">
-        <Image
-          src="native-vibe-logo.svg"
-          alt="NativeVibe"
-          width={30}
-          height={30}
-        />
-        <h1 className="text-2xl font-semibold text-[var(--brown)] text-center w-full">
-          Native Vibe
-        </h1>
-      </div>
+      <Header />
       <div className="flex flex-col gap-4 p-4">
         <div className="flex flex-col gap-4">
           <Text className="text-3xl font-bold leading-tight text-[var(--soft_petrol_blue)]">
@@ -31,7 +22,7 @@ export const HeroSection = () => {
             </span>
             !
           </Text>
-          <Text className=" text-base text-[var(--brown)]">
+          <Text className="text-base text-[var(--brown)]">
             Une app fun qui t&apos;apprend chaque jour{" "}
             <span className="font-bold">
               2 expressions US utiles et authentiques…
@@ -44,10 +35,8 @@ export const HeroSection = () => {
               Rejoins le mouvement et télécharge ton guide gratuit
             </Text>
 
-            <EmailDialog>
-              Je veux mon guide gratuit et l&apos;accès prioritaire
-            </EmailDialog>
-            <div>
+            <div className="flex flex-col gap-2">
+              <EmailDialog />
               <Text className="text-xs italic text-[var(--gray)]">
                 Inscription gratuite. Aucun spam.
               </Text>

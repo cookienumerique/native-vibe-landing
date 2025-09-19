@@ -8,7 +8,7 @@ export const Text = ({
   className?: string;
 }) => {
   return (
-    <p className={cn("text-sm text-[var(--brown)] text-center", className)}>
+    <p className={cn("text-base text-[var(--brown)] text-center", className)}>
       {children}
     </p>
   );

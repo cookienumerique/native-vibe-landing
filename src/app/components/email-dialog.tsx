@@ -1,6 +1,6 @@
 "use client";
 
-import { Text } from "@/app/text";
+import { Text } from "@/app/components/text";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -15,12 +15,8 @@ import { Label } from "@/components/ui/label";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { Ban, CircleCheck } from "lucide-react";
 import { useState } from "react";
-type EmailDialogProps = {
-  children: string;
-  className?: string;
-};
 
-export const EmailDialog = ({ children, className }: EmailDialogProps) => {
+export const EmailDialog = () => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<
     "idle" | "loading" | "success" | "error"
@@ -53,8 +49,9 @@ export const EmailDialog = ({ children, className }: EmailDialogProps) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default" className={className}>
-          {children}
+        <Button variant="default" className="p-4 text-md" size="xl">
+          Je veux mon guide gratuit <br />
+          et l&apos;accès prioritaire
         </Button>
       </DialogTrigger>
 
