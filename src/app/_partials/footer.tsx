@@ -17,6 +17,9 @@ export const Footer = () => {
             Native Vibe 2025
           </Text>
         </div>
+        <Link href="/">
+          <Text className="text-white font-bold">Accueil</Text>
+        </Link>
         <Link href="/politique-de-confidentialite">
           <Text className="text-white font-bold">
             Politique de confidentialité
