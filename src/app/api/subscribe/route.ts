@@ -22,7 +22,6 @@ export async function POST(req: Request) {
     return Response.json({ message: "Inscription réussie !" }, { status: 200 });
   } catch (err) {
     console.error(err);
-    console.log(err);
     return Response.json(
       { error: "Erreur lors de l'inscription" },
       { status: 500 }

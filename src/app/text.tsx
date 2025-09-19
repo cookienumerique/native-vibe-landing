@@ -4,11 +4,11 @@ export const Text = ({
   children,
   className,
 }: {
-  children: string;
+  children: string | React.ReactNode;
   className?: string;
 }) => {
   return (
-    <p className={cn("text-sm text-[var(--gray)] text-center", className)}>
+    <p className={cn("text-sm text-[var(--brown)] text-center", className)}>
       {children}
     </p>
   );
