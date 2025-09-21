@@ -35,8 +35,8 @@ export const EmailDialog = () => {
     if (res.ok) {
       setStatus("success");
       const link = document.createElement("a");
-      link.href = "/10-phrases-us.pdf";
-      link.download = "10-phrases-us.pdf";
+      link.href = "/lead-magnet.pdf";
+      link.download = "lead-magnet.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -49,7 +49,7 @@ export const EmailDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default" className="p-4 text-md" size="xl">
+        <Button variant="default" className="p-4 text-md w-full" size="xl">
           Je veux mon guide gratuit <br />
           et l&apos;accès prioritaire
         </Button>
@@ -83,7 +83,11 @@ export const EmailDialog = () => {
 
           <DialogFooter className="flex justify-end">
             {status !== "success" && (
-              <Button type="submit" disabled={status === "loading"}>
+              <Button
+                type="submit"
+                disabled={status === "loading"}
+                className="w-full"
+              >
                 {status === "loading"
                   ? "Envoi..."
                   : "Je télécharge mon guide gratuit"}
