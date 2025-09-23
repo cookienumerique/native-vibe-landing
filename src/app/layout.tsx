@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Native Vibe",
-  description: "Learn English with Native Vibe",
+  description: "Apprends l'anglais avec Native Vibe",
 };
 
 const quicksand = Quicksand({
